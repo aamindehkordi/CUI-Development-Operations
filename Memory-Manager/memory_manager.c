@@ -4,7 +4,14 @@
 #include "linked_list.h"
 #include "memory_manager.h"
 
-
+/*
+ * Initializes a new memory manager with a specified amount of RAM
+ * and a specified fit type.
+ *
+ * -=| Params |=-
+ *   RAM_size: Int representing how much memory is available for the memory manager
+ *   type:     Int representing which fit type to use for the memory manager
+*/
 Memory_Manager *init_memory_space(int RAM_size, int type)
 {
 	int freeListCode = EXIT_FAILURE;
